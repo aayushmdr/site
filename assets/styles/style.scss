@@ -4,7 +4,7 @@ $primary-dark: rgba(41,129,193,1);
 
 
 // $enable-gradients: true;
-// $gradient: linear-gradient(90deg, rgba(95,161,209,1) 0%, rgba(69,146,202,1) 46%, rgba(41,129,193,1) 97%);;;
+$gradient: linear-gradient(114.49deg, #40D8AB -13.13%, #3A97AB 51.5%, #3355AA 109.74%);
 
 
 
@@ -13,9 +13,23 @@ $primary-dark: rgba(41,129,193,1);
 $font-family-sans-serif: 'Poppins';
 
 $input-btn-font-family: 'Poppins', sans-serif;
+$btn-font-size: 1.1rem;
 $btn-font-weight: 300;
+$input-btn-padding-y:         1rem;
+$input-btn-padding-x:         3.2rem ;
+
+$input-btn-padding-y-sm:      0.7rem;
+$input-btn-padding-x-sm:      2.2rem;
+$input-btn-font-size-sm:      1rem;
+
+$input-btn-padding-y-lg:    1.2rem ;
+$input-btn-padding-x-lg:      3.7rem ;
+$input-btn-font-size-lg:      1.3rem;
+
 
 $font-size-base: 1rem;
+
+
 
 
 body{
@@ -30,21 +44,29 @@ body{
 }
 
 .nav-bg{
-    background: linear-gradient(90deg, rgba(95,161,209,1) 0%, rgba(69,146,202,1) 46%, rgba(41,129,193,1) 97%);;;
-}
-
-.nav-btn{
-    border-radius: 50px;
-    background-color: rgb(255, 255, 255);
-    padding-left: 20px;
-    padding-right: 20px;
-    height: 35px;
-    border: none;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-    font-size: 1rem;
+    // background: linear-gradient(90deg, rgba(95,161,209,1) 0%, rgba(69,146,202,1) 46%, rgba(41,129,193,1) 97%);;;
+    // background: linear-gradient(114.49deg, #40D8AB -13.13%, #3A97AB 51.5%, #3355AA 109.74%);;
+    z-index: 10;
 
 }
+
+// .nav-btn{
+//     border-radius: 50px;
+//     background-color: rgb(255, 255, 255);
+//     height: 50px;
+//     width: 180px;
+//     border: none;
+//     font-family: 'Poppins', sans-serif;
+//     font-weight: 400;
+//     font-size: 1rem;
+//     vertical-align: middle;
+//     color:rgb(42, 116, 168);
+
+//     &:hover{
+//         box-shadow: 0px 3px 20px 3px rgba(255, 255, 255, 0.25);
+//     }
+
+// }
 
 *{
     margin: 0px;
@@ -53,7 +75,6 @@ body{
 }
 
 
-@import 'background';
 
 
 
@@ -79,7 +100,7 @@ body{
 
 
 @import '../bootstrap-5.2.0/scss/bootstrap';
-@import 'fonts';
+
 
 .navbar-toggler {
     padding: var(--#{$prefix}navbar-toggler-padding-y) var(--#{$prefix}navbar-toggler-padding-x);
@@ -104,3 +125,50 @@ body{
 
 
 
+  .icon-bg{
+    font-size: 42px;
+//    color: #3A96AB;
+    color: white;
+  }
+
+  //custom buttons
+
+.btn{
+    border-radius: 40px;
+    border: none;
+    font-weight: 400;
+
+}
+
+
+.btn-primary{
+    background-image: $gradient;
+    box-shadow: 0px 10px 48px rgba(62, 198, 170, 0.4);
+
+    &:hover{
+        box-shadow: 0px 0px 52px #3EC6AA;
+    }
+
+}
+
+.btn-light {
+    background-color: rgb(255, 255, 255);
+    color:rgb(42, 116, 168);
+
+    &:hover{
+        box-shadow: 0px 3px 20px 3px rgba(255, 255, 255, 0.25);
+        color:rgb(42, 116, 168);
+        background-color: rgb(255, 255, 255);
+        border: none
+
+        
+    }
+}
+
+
+
+
+
+
+  @import 'custom/fonts';
+  @import 'custom/background';
