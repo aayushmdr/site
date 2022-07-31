@@ -29,6 +29,11 @@ $input-btn-font-size-lg:      1.3rem;
 
 $font-size-base: 1rem;
 
+//card
+// $card-border-width: 8px;
+$card-border-radius:  30px;
+
+
 
 
 
@@ -125,12 +130,21 @@ body{
 
 
 
-  .icon-bg{
+.icon-bg{
     font-size: 42px;
-//    color: #3A96AB;
-    color: white;
+    color: #3A96AB;
+    //color: white;
   }
 
+.display-top{
+    z-index: 10;
+  }
+
+#services {
+    background: linear-gradient(114.49deg, rgba(64, 216, 171, 0.15) -23.37%, rgba(58, 151, 171, 0.15) 41.26%, rgba(51, 85, 170, 0.15) 99.5%);
+}
+
+  
   //custom buttons
 
 .btn{
@@ -165,8 +179,17 @@ body{
     }
 }
 
-
-
+.custom-card{
+    border-radius: 30px;
+    border: solid 6px transparent;
+    background-image: linear-gradient(white,white), 
+    linear-gradient(114.49deg, #40D8AB -13.13%, #3A97AB 51.5%, #3355AA 109.74%);;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    background-color: #fff;
+    height: auto;
+    width: fit-content;
+}
 
 
 
