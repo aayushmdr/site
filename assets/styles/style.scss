@@ -1,0 +1,106 @@
+$primary: rgb(42, 116, 168);
+$primary-dark: rgba(41,129,193,1);
+
+
+
+// $enable-gradients: true;
+// $gradient: linear-gradient(90deg, rgba(95,161,209,1) 0%, rgba(69,146,202,1) 46%, rgba(41,129,193,1) 97%);;;
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$font-family-sans-serif: 'Poppins';
+
+$input-btn-font-family: 'Poppins', sans-serif;
+$btn-font-weight: 300;
+
+$font-size-base: 1rem;
+
+
+body{
+    font-family: 'Poppins',sans-serif;
+    /* background: rgb(95,161,209);
+    background: linear-gradient(90deg, rgba(95,161,209,1) 0%, rgba(69,146,202,1) 46%, rgba(41,129,193,1) 97%); */
+}
+
+.nav-item{
+    padding: 10px;
+    
+}
+
+.nav-bg{
+    background: linear-gradient(90deg, rgba(95,161,209,1) 0%, rgba(69,146,202,1) 46%, rgba(41,129,193,1) 97%);;;
+}
+
+.nav-btn{
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 35px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+@import 'background';
+
+
+
+.banner-image{
+    
+	transform: translatey(0px);
+	animation: float 4s ease-in-out infinite;
+ }
+ @keyframes float {
+	0% {
+		
+		transform: translatey(0px);
+	}
+	50% {
+		
+		transform: translatey(-30px);
+	}
+	100% {
+		
+		transform: translatey(0px);
+	}
+}
+
+
+@import '../bootstrap-5.2.0/scss/bootstrap';
+@import 'fonts';
+
+.navbar-toggler {
+    padding: var(--#{$prefix}navbar-toggler-padding-y) var(--#{$prefix}navbar-toggler-padding-x);
+    @include font-size(var(--#{$prefix}navbar-toggler-font-size));
+    line-height: 1;
+    color: var(--#{$prefix}navbar-color);
+    background-color: transparent; // remove default button style
+    border: none; // remove default button style
+    @include border-radius(var(--#{$prefix}navbar-toggler-border-radius));
+    @include transition(var(--#{$prefix}navbar-toggler-transition));
+  
+    &:hover {
+      text-decoration: none;
+    }
+  
+    &:focus {
+      text-decoration: none;
+      outline: 0;
+      box-shadow: 0 0 0 var(--#{$prefix}navbar-toggler-focus-width);
+    }
+  }
+
+
+
