@@ -265,7 +265,7 @@ strong {
 }
 
 small, .small {
-  font-size: 0.875em;
+  font-size: 1.2rem;
 }
 
 mark, .mark {
@@ -315,7 +315,7 @@ pre {
   margin-top: 0;
   margin-bottom: 1rem;
   overflow: auto;
-  font-size: 0.875em;
+  font-size: 1.2rem;
 }
 pre code {
   font-size: inherit;
@@ -324,7 +324,7 @@ pre code {
 }
 
 code {
-  font-size: 0.875em;
+  font-size: 1.2rem;
   color: var(--bs-code-color);
   word-wrap: break-word;
 }
@@ -334,7 +334,7 @@ a > code {
 
 kbd {
   padding: 0.1875rem 0.375rem;
-  font-size: 0.875em;
+  font-size: 1.2rem;
   color: var(--bs-body-bg);
   background-color: var(--bs-body-color);
   border-radius: 0.25rem;
@@ -625,7 +625,7 @@ progress {
 }
 
 .initialism {
-  font-size: 0.875em;
+  font-size: 1.2rem;
   text-transform: uppercase;
 }
 
@@ -640,7 +640,7 @@ progress {
 .blockquote-footer {
   margin-top: -1rem;
   margin-bottom: 1rem;
-  font-size: 0.875em;
+  font-size: 1.2rem;
   color: #6c757d;
 }
 .blockquote-footer::before {
@@ -671,7 +671,7 @@ progress {
 }
 
 .figure-caption {
-  font-size: 0.875em;
+  font-size: 1.2rem;
   color: #6c757d;
 }
 
@@ -2041,7 +2041,7 @@ progress {
 
 .form-text {
   margin-top: 0.25rem;
-  font-size: 0.875em;
+  font-size: 1.2rem;
   color: #6c757d;
 }
 
@@ -2711,7 +2711,7 @@ textarea.form-control-lg {
   display: none;
   width: 100%;
   margin-top: 0.25rem;
-  font-size: 0.875em;
+  font-size: 1.2rem;
   color: #198754;
 }
 
@@ -2804,7 +2804,7 @@ textarea.form-control-lg {
   display: none;
   width: 100%;
   margin-top: 0.25rem;
-  font-size: 0.875em;
+  font-size: 1.2rem;
   color: #dc3545;
 }
 
@@ -11077,6 +11077,32 @@ textarea.form-control-lg {
   width: fit-content;
 }
 
+.eduexp {
+  position: relative;
+}
+
+.eduexp::before {
+  content: "";
+  height: 100%;
+  width: 2px;
+  background-color: #3A96AB;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50px;
+}
+
+.eduexp::after {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background-color: #3A96AB;
+  position: absolute;
+  left: -7px;
+  top: 0;
+  border-radius: 50px;
+}
+
 h1, .h1 {
   font-size: 4.375rem;
   line-height: 3.75rem;
@@ -11103,7 +11129,6 @@ h3, .h3 {
 h4, .h4 {
   font-weight: 600;
   font-size: 1.8rem;
-  line-height: 3.125rem;
   margin-bottom: 0.9375rem;
   color: #004678;
 }
@@ -11111,7 +11136,6 @@ h4, .h4 {
 h5, .h5 {
   font-weight: 600;
   font-size: 1.3rem;
-  margin-bottom: 2.1875rem;
   color: #004678;
 }
 
