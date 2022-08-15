@@ -11039,6 +11039,10 @@ textarea.form-control-lg {
   background: linear-gradient(114.49deg, rgba(64, 216, 171, 0.15) -23.37%, rgba(58, 151, 171, 0.15) 41.26%, rgba(51, 85, 170, 0.15) 99.5%);
 }
 
+#tech {
+  background: linear-gradient(114.49deg, rgba(64, 216, 171, 0.15) -23.37%, rgba(58, 151, 171, 0.15) 41.26%, rgba(51, 85, 170, 0.15) 99.5%);
+}
+
 .btn {
   border-radius: 40px;
   border: none;
@@ -11101,6 +11105,38 @@ textarea.form-control-lg {
   left: -7px;
   top: 0;
   border-radius: 50px;
+}
+
+.gradient-icon {
+  fill: url(linear-gradient(114.49deg, #40D8AB -13.13%, #3A97AB 51.5%, #3355AA 109.74%));
+}
+
+.tech-card {
+  border-radius: 30px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #fff;
+  border: none;
+  height: auto;
+  width: fit-content;
+}
+.tech-card:hover {
+  box-shadow: 0px 18px 44px 4px rgba(58, 157, 170, 0.2);
+  transform: scale(1.08);
+}
+
+.tech-class {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.tech-class span {
+  padding: 10px;
 }
 
 h1, .h1 {

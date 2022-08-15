@@ -145,6 +145,11 @@ body{
     background: linear-gradient(114.49deg, rgba(64, 216, 171, 0.15) -23.37%, rgba(58, 151, 171, 0.15) 41.26%, rgba(51, 85, 170, 0.15) 99.5%);
 }
 
+#tech {
+  background: linear-gradient(114.49deg, rgba(64, 216, 171, 0.15) -23.37%, rgba(58, 151, 171, 0.15) 41.26%, rgba(51, 85, 170, 0.15) 99.5%);
+}
+
+
   
   //custom buttons
 
@@ -220,7 +225,39 @@ body{
   border-radius: 50px;
 }
 
+.gradient-icon{
+fill: url(linear-gradient(114.49deg, #40D8AB -13.13%, #3A97AB 51.5%, #3355AA 109.74%));
 
+  
+
+}
+
+.tech-card{
+  border-radius: 30px;
+  width: fit-content;
+  background-color: #fff;
+  border: none;
+  height: auto;
+  width: fit-content;
+
+  &:hover{
+    box-shadow: 0px 18px 44px 4px rgba(58, 157, 170, 0.20);
+    transform: scale(1.08);
+  }
+}
+
+.tech-class{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.tech-class span{
+  padding: 10px;
+}
 
   @import 'custom/fonts';
   @import 'custom/background';
