@@ -149,6 +149,21 @@ body{
   background: linear-gradient(114.49deg, rgba(64, 216, 171, 0.15) -23.37%, rgba(58, 151, 171, 0.15) 41.26%, rgba(51, 85, 170, 0.15) 99.5%);
 }
 
+.line{
+  width: 130px;
+  height: 8px;
+  background-image: $gradient;
+  display: inline-block;
+  border-radius: 30px;
+  margin-top: 20px;
+}
+
+.text-gradient{
+  background: $gradient;
+  background-clip: text;
+  color: transparent;
+  
+}
 
   
   //custom buttons
