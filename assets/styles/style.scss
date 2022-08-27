@@ -132,7 +132,7 @@ body{
 
 
 .icon-bg{
-    font-size: 42px;
+    font-size: 40px;
     color: #3A96AB;
     //color: white;
   }
@@ -165,6 +165,9 @@ body{
   
 }
 
+#about p{
+  text-align: justify;
+}
   
   //custom buttons
 
@@ -305,5 +308,8 @@ body{
   transform: translateY(-100%);
 }
 
+
+
+  @import'custom/footer.scss';
   @import 'custom/fonts';
   @import 'custom/background';
