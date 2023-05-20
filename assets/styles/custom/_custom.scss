@@ -1,5 +1,6 @@
 body{
     font-family: 'Poppins',sans-serif;
+    overflow-x: hidden;
     /* background: rgb(95,161,209);
     background: linear-gradient(90deg, rgba(95,161,209,1) 0%, rgba(69,146,202,1) 46%, rgba(41,129,193,1) 97%); */
 }
@@ -96,7 +97,12 @@ body{
   text-align: justify;
 }
   
-
+.separator{
+  width: 80%;
+  height: 2px;
+  background-color: $white;
+  border-radius: 20px;
+}
 
 .custom-card{
     border-radius: 30px;

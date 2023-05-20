@@ -1,0 +1,17 @@
+footer{
+    background: $gradient;
+}
+
+
+.footer-links{
+    a{
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: $white;
+        padding: 0 20px 0 20px;
+
+        &:hover{
+            color: #e6e6e6;
+        }
+    }
+}

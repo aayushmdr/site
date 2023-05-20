@@ -19980,6 +19980,7 @@ p {
 
 body {
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
   /* background: rgb(95,161,209);
   background: linear-gradient(90deg, rgba(95,161,209,1) 0%, rgba(69,146,202,1) 46%, rgba(41,129,193,1) 97%); */
 }
@@ -20048,6 +20049,13 @@ body {
   text-align: justify;
 }
 
+.separator {
+  width: 80%;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
 .custom-card {
   border-radius: 30px;
   border: solid 6px transparent;
@@ -20062,6 +20070,16 @@ body {
 
 footer {
   background: linear-gradient(114.49deg, #40D8AB -13.13%, #3A97AB 51.5%, #3355AA 109.74%);
+}
+
+.footer-links a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 0 20px 0 20px;
+}
+.footer-links a:hover {
+  color: #e6e6e6;
 }
 
 .preload {
