@@ -20006,9 +20006,14 @@ body {
     transform: translatey(0px);
   }
 }
-.icon-bg {
+.social-icon {
   font-size: 40px;
+}
+.social-icon-blue {
   color: #3A96AB;
+}
+.social-icon-white {
+  color: #fff;
 }
 
 .display-top {
@@ -20053,6 +20058,10 @@ body {
   height: auto;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+footer {
+  background: linear-gradient(114.49deg, #40D8AB -13.13%, #3A97AB 51.5%, #3355AA 109.74%);
 }
 
 .preload {

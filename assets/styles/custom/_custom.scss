@@ -52,10 +52,16 @@ body{
 }
 
 
-.icon-bg{
+.social-icon{
     font-size: 40px;
-    color: #3A96AB;
+    
     //color: white;
+    &-blue{
+      color: #3A96AB;
+    }
+    &-white{
+      color: $white;
+    }
   }
 
 .display-top{
