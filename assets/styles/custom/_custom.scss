@@ -1,13 +1,29 @@
-body{
-    font-family: 'Poppins',sans-serif;
-    overflow-x: hidden;
-    /* background: rgb(95,161,209);
-    background: linear-gradient(90deg, rgba(95,161,209,1) 0%, rgba(69,146,202,1) 46%, rgba(41,129,193,1) 97%); */
+* {
+    // margin: 0px;
+    // padding: 0px;
+    box-sizing: border-box;
 }
 
-
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+.hero-container{
+    padding-bottom: 32px;
+    .navbar{
+        &-brand{
+            font-size: 28px;
+        }
+    }
+    .hero-card {
+        border-radius: 8px;
+        padding: 16px;
+        background: rgba(255, 255, 255, 0.25);
+        //box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        max-width: 450px;
+    
+        .hero-img {
+    
+        }
+    
+    }
 }
