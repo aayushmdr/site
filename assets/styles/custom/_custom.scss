@@ -6,47 +6,37 @@
 
 
 body {
-    height: 100vh;
-    background-color: #8BC6EC;
-    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
-    background-attachment: fixed;
+    //height: 100vh;
+    // background-color: #8BC6EC;
+    // background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    //background-attachment: fixed;
 }
 
-.hero-container{
-    min-height: 90vh;
-    padding-bottom: 32px;
-    .navbar{
-        &-brand{
-            font-size: 28px;
-        }
-    }
-    .hero-card {
-        border-radius: 8px;
-        padding: 16px;
-        background: rgba(255, 255, 255, 0.25);
-        //box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
-        border: 2px solid rgba(255, 255, 255, 0.2);
-        max-width: 400px;
-    
-        .hero-img {
-    
-        }
-    
-    }
+.text-gradient-primary {
+    background: var(--hero-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
 
-.experience-section {
+.text-custom-primary {
+    color: var(--primary-text);
+}
 
-    .info-card{
-        border-radius: 8px;
-        padding: 24px;
-        background: rgba(255, 255, 255, 0.25);
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
-        border: 2px solid rgba(255, 255, 255, 0.2);
-        width: 100%;
-    }
+.gradient-bg {
+  background: var(--hero-gradient);
+}
 
+
+@keyframes levitate {
+  0% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-50px) scale(1.02); /* floats & grows slightly */
+  }
+  100% {
+    transform: translateY(0px) scale(1);
+  }
 }
