@@ -11,6 +11,8 @@
 <link rel="stylesheet" href="assets/styles/css/style.css">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 
 <body class="preload">
 
@@ -48,8 +50,8 @@
   </div>
   <div class="hero-container d-flex align-items-center">
     <div class="container">
-      <div class="row mt-1 mt-md-5 mx-md-5">
-        <div class="col-md-6 mb-4 mb-md-0 d-flex justify-content-center">
+      <div class="row gy-4 mt-1 mt-md-5 mx-md-5">
+        <div class="col-lg-6 mb-4 mb-md-0 d-flex justify-content-center">
           <div class="hero-card" data-tilt data-tilt-glare>
             <div class="hero-img mb-3 mb-md-4">
               <img src="assets/img/profile/profile-thumb.png" class="img-fluid" alt="Profile picture of me">
@@ -71,14 +73,14 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 d-flex align-items-md-center">
+        <div class="col-lg-6 d-flex align-items-md-center">
           <div class="hero-title text-white text-md-start text-center">
             <h1>Design that feels good, works great, and makes sense.</h1>
             <p>I’m a UI/UX designer who loves clean layouts, clever interactions, and making digital things feel human.
               Designing simple, intuitive interfaces with just the right amount of fun.
               Less chaos, more clarity.
             </p>
-            <div class="cta-buttons-wrapper">
+            <div class="cta-buttons-wrapper d-flex flex-row gap-1">
               <a href="mailto:amdhr@yahoo.com">
                 <button type="button" class="btn btn-light"><i class="fa fa-envelope-o me-2"
                     aria-hidden="true"></i>Let's talk</button>
@@ -100,7 +102,7 @@
     </div>
   </div>
 
-  <section class="section-about my-5 py-5">
+  <section class="section-about my-0 my-lg-5 py-5">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 align-content-lg-center">
@@ -116,10 +118,14 @@
               design with purpose and deliver products that make a genuine impact.
             </div>
             <div class="socials d-flex gap-2">
-              <div class="social-icon"><a href="https://www.linkedin.com/in/aayushmdr/" target="_blank"><i class="fa fa-linkedin"></i></a></div>
-              <div class="social-icon"><a href="https://www.behance.net/aayushmanandhar" target="_blank"><i class="fa fa-behance"></i></a></div>
-              <div class="social-icon"><a href="https://dribbble.com/aayushmdr" target="_blank"><i class="fa fa-dribbble"></i></a></div>
-              <div class="social-icon"><a href="http://instagram.com/aayushmdr" target="_blank"><i class="fa fa-instagram"></i></a></div>
+              <div class="social-icon"><a href="https://www.linkedin.com/in/aayushmdr/" target="_blank"><i
+                    class="fa fa-linkedin"></i></a></div>
+              <div class="social-icon"><a href="https://www.behance.net/aayushmanandhar" target="_blank"><i
+                    class="fa fa-behance"></i></a></div>
+              <div class="social-icon"><a href="https://dribbble.com/aayushmdr" target="_blank"><i
+                    class="fa fa-dribbble"></i></a></div>
+              <div class="social-icon"><a href="http://instagram.com/aayushmdr" target="_blank"><i
+                    class="fa fa-instagram"></i></a></div>
             </div>
           </div>
         </div>
@@ -133,8 +139,8 @@
     </div>
   </section>
 
-<section class="section-experience mb-5">
-      <div class="container">
+  <section class="section-experience mb-0 mb-lg-5">
+    <div class="container">
       <div class="row gx-5">
         <div class="col-lg-7">
           <div class="header text-custom-primary mb-4">
@@ -184,27 +190,231 @@
             <h2>Skills and Expertise</h2>
           </div>
           <div class="skills-list d-flex gap-2 flex-wrap">
-              <div class="skill">UI/UX Design</div>
-              <div class="skill">Wireframes</div>
-              <div class="skill">Prototypes</div>
-              <div class="skill">Design Systems</div>
-              <div class="skill">InteractionDesign</div>
-              <div class="skill">User Research</div>
-              <div class="skill">Accessibility</div>
-              <div class="skill">Figma</div>
-              <div class="skill">Adobe XD</div>
-              <div class="skill">Adobe Photoshop</div>
-              <div class="skill">Illustrator</div>
-              <div class="skill">Adobe Lightroom</div>
-              <div class="skill">HTML/CSS</div>
-              <div class="skill">Bootstrap</div>
-              <div class="skill">Responsive Design</div>
-            </div>
+            <div class="skill">UI/UX Design</div>
+            <div class="skill">Wireframes</div>
+            <div class="skill">Prototypes</div>
+            <div class="skill">Design Systems</div>
+            <div class="skill">InteractionDesign</div>
+            <div class="skill">User Research</div>
+            <div class="skill">Accessibility</div>
+            <div class="skill">Figma</div>
+            <div class="skill">Adobe XD</div>
+            <div class="skill">Adobe Photoshop</div>
+            <div class="skill">Illustrator</div>
+            <div class="skill">Adobe Lightroom</div>
+            <div class="skill">HTML/CSS</div>
+            <div class="skill">Bootstrap</div>
+            <div class="skill">Responsive Design</div>
+          </div>
         </div>
       </div>
     </div>
-</section>
+  </section>
 
+  <section class="section-work my-0 my-lg-5 py-5">
+    <div class="container">
+      <div class="d-flex flex-column flex-lg-row justify-content-between mb-5">
+        <div class="d-flex flex-column gap-1 mb-3 mb-lg-0 w-lg-75">
+          <h2 class="text-custom-primary">Some of my work.</h2>
+          <div class="text-custom-primary fs-sm">This is just a glimpse of some of my projects — a curated selection
+            that highlights my design journey so
+            far. To explore more of my recent work, feel free to check out my full portfolio or reach out to me directly
+            for an updated showcase.
+          </div>
+        </div>
+        <a href="https://tinyurl.com/aayushPortfolio" target="_blank" rel="noopener noreferrer">
+          <button type="button" class="btn btn-primary btn-sm"><i class="fa fa-external-link me-2"
+              aria-hidden="true"></i>View Portfolio</button>
+        </a>
+      </div>
+      <div class="row gy-5">
+
+        <div class="col-lg-6">
+          <div class="card h-100 border-0">
+            <img src="assets/img/portfolio/Digital Wallet App.jpg" class="card-img-top rounded-2" alt="Project 1">
+            <div class="card-body mt-3 p-0 text-custom-primary">
+              <div class="d-flex flex-column gap-2">
+                <h5 class="card-title mb-0">Mobile Wallet App Design</h5>
+                <p class="card-text mb-0">A sleek and intuitive wallet design for a modern fintech platform.</p>
+                <div class="d-flex flex-row mt-1 gap-1">
+                  <div class="custom-tag">Mobile App Design</div>
+                  <div class="custom-tag">UI Design</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card h-100 border-0">
+            <img src="assets/img/portfolio/p-1.jpg" class="card-img-top rounded-2" alt="Project 1">
+            <div class="card-body mt-3 p-0 text-custom-primary">
+              <div class="d-flex flex-column gap-2">
+                <h5 class="card-title mb-0">SMS Provider Landing Page Design</h5>
+                <p class="card-text mb-0">A sleek and intuitive wallet design for a modern fintech platform.</p>
+                <div class="d-flex flex-row mt-1 gap-1">
+                  <div class="custom-tag">Page Design</div>
+                  <div class="custom-tag">Webpage Design</div>
+                  <div class="custom-tag">UI Design</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card h-100 border-0">
+            <img src="assets/img/portfolio/p-2.png" class="card-img-top rounded-2" alt="Project 1">
+            <div class="card-body mt-3 p-0 text-custom-primary">
+              <div class="d-flex flex-column gap-2">
+                <h5 class="card-title mb-0">Travel Booking Site Design</h5>
+                <p class="card-text mb-0">A sleek and intuitive wallet design for a modern fintech platform.</p>
+                <div class="d-flex flex-row mt-1 gap-1">
+                  <div class="custom-tag">Website Design</div>
+                  <div class="custom-tag">UI Design</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card h-100 border-0">
+            <img src="assets/img/portfolio/p-3.jpg" class="card-img-top rounded-2" alt="Project 1">
+            <div class="card-body mt-3 p-0 text-custom-primary">
+              <div class="d-flex flex-column gap-2">
+                <h5 class="card-title mb-0">Real Estate Site Design</h5>
+                <p class="card-text mb-0">A sleek and intuitive wallet design for a modern fintech platform.</p>
+                <div class="d-flex flex-row mt-1 gap-1">
+                  <div class="custom-tag">Website Design</div>
+                  <div class="custom-tag">UI Design</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card h-100 border-0">
+            <img src="assets/img/portfolio/p-4.jpg" class="card-img-top rounded-2" alt="Project 1">
+            <div class="card-body mt-3 p-0 text-custom-primary">
+              <div class="d-flex flex-column gap-2">
+                <h5 class="card-title mb-0">Sign up and Sign in Pages Design</h5>
+                <p class="card-text mb-0">A sleek and intuitive wallet design for a modern fintech platform.</p>
+                <div class="d-flex flex-row mt-1 gap-1">
+                  <div class="custom-tag">Page Design</div>
+                  <div class="custom-tag">3D illustration</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card h-100 border-0">
+            <img src="assets/img/portfolio/p-5.jpg" class="card-img-top rounded-2" alt="Project 1">
+            <div class="card-body mt-3 p-0 text-custom-primary">
+              <div class="d-flex flex-column gap-2">
+                <h5 class="card-title mb-0">Notes App Design</h5>
+                <p class="card-text mb-0">A minimal and simplistic note taking apps for phones.</p>
+                <div class="d-flex flex-row mt-1 gap-1">
+                  <div class="custom-tag">Mobile App Design</div>
+                  <div class="custom-tag">UI Design</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-shots my-0 my-lg-5 py-5">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-4 d-flex align-items-center">
+          <div class="d-flex gap-2 flex-column">
+            <h1 class="text-gradient-primary mb-0">Through my Lens.</h1>
+            <div class="subtext text-custom-primary mb-2 mb-lg-3">When I’m not designing pixels, I’m chasing light and
+              shadows. Here’s a little peek at
+              the world as I see it — a mix of unexpected moments, colors, and vibes captured one click at a time.
+            </div>
+            <a href="http://instagram.com/aayushmdr" target="_blank">
+              <button type="button" class="btn btn-primary"><i class="fa fa-instagram me-2"
+                  aria-hidden="true"></i>Follow me</button>
+            </a>
+          </div>
+
+        </div>
+        <div class="col-lg-8">
+          <swiper-container class="mySwiper" pagination="false"  effect="coverflow" grab-cursor="true"
+            centered-slides="true" slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0"
+            coverflow-effect-depth="100" coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
+            <swiper-slide>
+              <img src="assets/img/shots/dharahara.webp" />
+            </swiper-slide>
+            <swiper-slide>
+              <img src="assets/img/shots/doggo.webp" />
+            </swiper-slide>
+            <swiper-slide>
+              <img src="assets/img/shots/fishtail.webp" />
+            </swiper-slide>
+            <swiper-slide>
+              <img src="assets/img/shots/Jatra1.webp" />
+            </swiper-slide>
+            <swiper-slide>
+              <img src="assets/img/shots/Jatra2.webp" />
+            </swiper-slide>
+            <swiper-slide>
+              <img src="assets/img/shots/Jatra3.webp" />
+            </swiper-slide>
+            <swiper-slide>
+              <img src="assets/img/shots/kumari.webp" />
+            </swiper-slide>
+            <swiper-slide>
+              <img src="assets/img/shots/lakeside.webp" />
+            </swiper-slide>
+            <swiper-slide>
+              <img src="assets/img/shots/lakhey.webp" />
+            </swiper-slide>
+            <swiper-slide>
+              <img src="assets/img/shots/pulukisi.webp" />
+            </swiper-slide>
+            <swiper-slide>
+              <img src="assets/img/shots/flowers.webp" />
+            </swiper-slide>
+            <swiper-slide>
+              <div class="insta-slide d-flex flex-column gap-2 align-items-center justify-content-center text-custom-primary">
+                <i class="fa fa-instagram fa-2x"></i>
+                <div class="fs-3">@aayushmdr</div>
+                <div class="mb-3">For more on instagram.</div>
+                <a href="http://instagram.com/aayushmdr" target="_blank">
+              <button type="button" class="btn btn-primary">Follow</button>
+            </a>
+              </div>
+            </swiper-slide>
+          </swiper-container>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="section-contact mb-5">
+    <div class="container gradient-bg p-5 rounded-5 d-flex align-items-center justify-content-center custom-container">
+      <div class="d-flex flex-column gap-3 justify-content-center align-items-center">
+        <h1 class="text-white text-center text-lg-start mb-0">Ready to start a banger projet?</h1>
+        <div class="text-white text-center w-50">Have a project, idea, or just want to say hi? Drop me a message and let’s chat! I’m always excited to
+          collaborate, brainstorm, or share a few design stories over coffee (virtual or real).</div>
+        <a href="mailto:amdhr@yahoo.com">
+          <button type="button" class="btn btn-light"><i class="fa fa-envelope-o me-2" aria-hidden="true"></i>Let's
+            talk</button>
+        </a>
+      </div>
+
+
+    </div>
+  </section>
 
 
   <!-- Jquery  -->
@@ -223,6 +433,11 @@
   <!-- Custom JS -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/tilt.js"></script>
+  <script src="assets/js/embla.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
 
   <!-- fontawesome kit cdn  -->
   <script src="https://kit.fontawesome.com/812810788e.js" crossorigin="anonymous"></script>
