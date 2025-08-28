@@ -19556,6 +19556,9 @@ body {
 .section-work .card:hover {
   transform: translateY(-8px) scale(1.02);
 }
+.section-contact .custom-container {
+  min-height: 400px;
+}
 
 .hero-container {
   /* fallback for old browsers */
@@ -19704,4 +19707,19 @@ body {
     opacity: 0;
     transform: rotateY(-180deg);
   }
+}
+swiper-container {
+  width: 100%;
+}
+
+swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 60%;
+  max-height: 500px;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

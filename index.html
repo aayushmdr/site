@@ -11,6 +11,8 @@
 <link rel="stylesheet" href="assets/styles/css/style.css">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 
 <body class="preload">
 
@@ -78,7 +80,7 @@
               Designing simple, intuitive interfaces with just the right amount of fun.
               Less chaos, more clarity.
             </p>
-            <div class="cta-buttons-wrapper">
+            <div class="cta-buttons-wrapper d-flex flex-row gap-1">
               <a href="mailto:amdhr@yahoo.com">
                 <button type="button" class="btn btn-light"><i class="fa fa-envelope-o me-2"
                     aria-hidden="true"></i>Let's talk</button>
@@ -327,7 +329,76 @@
     </div>
   </section>
 
+  <section class="section-shots my-0 my-lg-5 py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 d-flex align-items-center">
+          <div class="d-flex gap-2 flex-column">
+            <h1 class="text-gradient-primary mb-0">Through my Lens.</h1>
+            <div class="subtext text-custom-primary mb-2 mb-lg-3">When I’m not designing pixels, I’m chasing light and
+              shadows. Here’s a little peek at
+              the world as I see it — a mix of unexpected moments, colors, and vibes captured one click at a time.
+            </div>
+            <a href="http://instagram.com/aayushmdr" target="_blank">
+              <button type="button" class="btn btn-primary"><i class="fa fa-instagram me-2"
+                  aria-hidden="true"></i>Follow me</button>
+            </a>
+          </div>
 
+        </div>
+        <div class="col-lg-8">
+          <swiper-container class="mySwiper" pagination="false" autoplay="true" effect="coverflow" grab-cursor="true"
+            centered-slides="true" slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0"
+            coverflow-effect-depth="100" coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
+            <swiper-slide>
+              <img src=" https://swiperjs.com/demos/images/nature-1.jpg" />
+            </swiper-slide>
+            <swiper-slide>
+              <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+            </swiper-slide>
+            <swiper-slide>
+              <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+            </swiper-slide>
+            <swiper-slide>
+              <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+            </swiper-slide>
+            <swiper-slide>
+              <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+            </swiper-slide>
+            <swiper-slide>
+              <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+            </swiper-slide>
+            <swiper-slide>
+              <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+            </swiper-slide>
+            <swiper-slide>
+              <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+            </swiper-slide>
+            <swiper-slide>
+              <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+            </swiper-slide>
+          </swiper-container>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="section-contact mb-5">
+    <div class="container gradient-bg p-5 rounded-5 d-flex align-items-center justify-content-center custom-container">
+      <div class="d-flex flex-column gap-3 justify-content-center align-items-center">
+        <h1 class="text-white mb-0">Ready to start a banger projet?</h1>
+        <div class="text-white text-center w-50">Have a project, idea, or just want to say hi? Drop me a message and let’s chat! I’m always excited to
+          collaborate, brainstorm, or share a few design stories over coffee (virtual or real).</div>
+        <a href="mailto:amdhr@yahoo.com">
+          <button type="button" class="btn btn-light"><i class="fa fa-envelope-o me-2" aria-hidden="true"></i>Let's
+            talk</button>
+        </a>
+      </div>
+
+
+    </div>
+  </section>
 
 
   <!-- Jquery  -->
@@ -346,6 +417,11 @@
   <!-- Custom JS -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/tilt.js"></script>
+  <script src="assets/js/embla.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
 
   <!-- fontawesome kit cdn  -->
   <script src="https://kit.fontawesome.com/812810788e.js" crossorigin="anonymous"></script>
