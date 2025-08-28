@@ -19502,6 +19502,8 @@ body {
 .hero-container {
   background-color: #8BC6EC;
   background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+  background-size: 250% 250%;
+  animation: gradientFlow 10s ease infinite;
   min-height: 100vh;
   padding-bottom: 32px;
 }
@@ -19618,6 +19620,8 @@ body {
 .gradient-bg {
   background: var(--hero-gradient);
   background-attachment: fixed;
+  background-size: 250% 250%;
+  animation: gradientFlow 10s ease infinite;
 }
 
 @media (min-width: 992px) {
@@ -19638,10 +19642,28 @@ body {
     transform: translateY(0px) scale(1);
   }
   50% {
-    transform: translateY(-50px) scale(1.02); /* floats & grows slightly */
+    transform: translateY(-50px) scale(1.02);
+    /* floats & grows slightly */
   }
   100% {
     transform: translateY(0px) scale(1);
+  }
+}
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 50% 100%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 0%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 .preload {
