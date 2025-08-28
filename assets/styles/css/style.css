@@ -19545,9 +19545,16 @@ body {
   border: 2px solid var(--primary-text);
   border-radius: 8px;
 }
+.section-work .card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  will-change: transform, box-shadow;
+}
 .section-work .card img {
   object-fit: cover;
   height: 100%;
+}
+.section-work .card:hover {
+  transform: translateY(-8px) scale(1.02);
 }
 
 .hero-container {
