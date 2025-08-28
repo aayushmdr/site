@@ -19545,6 +19545,10 @@ body {
   border: 2px solid var(--primary-text);
   border-radius: 8px;
 }
+.section-work .card img {
+  object-fit: cover;
+  height: 100%;
+}
 
 .hero-container {
   /* fallback for old browsers */
@@ -19555,6 +19559,14 @@ body {
 .btn {
   padding: 14px 24px;
   border-radius: 32px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.btn-primary {
+  color: white;
+  background-color: var(--primary-text);
+}
+.btn-primary:hover {
+  color: white;
 }
 .btn-light {
   background-color: white;
@@ -19563,12 +19575,18 @@ body {
   border: none;
 }
 .btn-light:hover {
-  background-color: #719ECF;
-  color: white;
-  border: 1px solid white;
+  background-color: #fefefe;
+  color: var(--primary-text);
 }
 .btn-link-light {
   color: white;
+}
+.btn-link:hover {
+  transform: none;
+}
+.btn:not(.btn-link):hover {
+  transform: rotate(-2deg) scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 * {
@@ -19590,6 +19608,19 @@ body {
 .gradient-bg {
   background: var(--hero-gradient);
   background-attachment: fixed;
+}
+
+@media (min-width: 992px) {
+  .w-lg-75 {
+    width: 75% !important;
+  }
+}
+.custom-tag {
+  border: 2px solid var(--primary-text);
+  padding: 4px 12px;
+  font-size: 12px;
+  color: var(--primary-text);
+  border-radius: 16px;
 }
 
 @keyframes levitate {

@@ -29,6 +29,20 @@ body {
   background-attachment: fixed;
 }
 
+@media (min-width: 992px) {
+  .w-lg-75 {
+    width: 75% !important;
+  }
+}
+
+.custom-tag {
+  border: 2px solid var(--primary-text);
+  padding: 4px 12px;
+  font-size: 12px;
+  color: var(--primary-text);
+  border-radius: 16px;
+}
+
 
 @keyframes levitate {
   0% {
